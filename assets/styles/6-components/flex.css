@@ -1,0 +1,8 @@
+/*------------------------------------*\
+  flex / components
+\*------------------------------------*/
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}

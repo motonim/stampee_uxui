@@ -1,0 +1,20 @@
+/*------------------------------------*\
+  colors / settings
+\*------------------------------------*/
+
+
+:root {
+    --color-primary: #064C76;
+    /* --color-primary: #161616; */
+    --color-secondary: #5A90AD;
+    /* --color-secondary: #ffbb40; */
+    /* --color-tertiary: #2F4858; */
+
+    /* white to black */
+    --color-white: #fff;
+    --color-ivory: #F8F6F4;
+    /* --color-light-gray: whitesmoke; */
+    --color-gray: #999999;
+    --color-black: #2A2C34;
+   
+}

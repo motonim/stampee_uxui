@@ -1,0 +1,62 @@
+/*-------------------------------------------------------------------*\
+  SETTINGS - Variables globales comme les polices et les couleurs
+\*-------------------------------------------------------------------*/
+
+@import "./1-settings/colors.css";
+@import "./1-settings/ease.css";
+@import "./1-settings/fonts.css";
+@import "./1-settings/variables.css";
+@import "./1-settings/space.css";
+
+
+/*-------------------------------------------------------------------*\
+  TOOLS - Mixins et fonctions par défaut
+\*-------------------------------------------------------------------*/
+
+
+
+/*-------------------------------------------------------------------*\
+  GENERIC - Styles de base (réinitialisation, box-sizing, etc.)
+\*-------------------------------------------------------------------*/
+
+@import "./3-generic/purify.css";
+
+
+/*-------------------------------------------------------------------*\
+  ELEMENTS - Éléments HTML
+\*-------------------------------------------------------------------*/
+
+@import "./4-elements/link.css";
+@import "./4-elements/list.css";
+@import "./4-elements/typography.css";
+@import "./4-elements/img.css";
+@import "./4-elements/icon.css";
+@import "./4-elements/btn.css";
+@import "./4-elements/text.css";
+@import "./4-elements/dropdown.css";
+@import "./4-elements/product.css";
+@import "./4-elements/pagination.css";
+
+
+/*-------------------------------------------------------------------*\
+  OBJECTS - Classes non décorées
+\*-------------------------------------------------------------------*/
+
+@import "./5-objects/wrapper.css";
+@import "./5-objects/spacings.css";
+
+/*-------------------------------------------------------------------*\
+  COMPONENTS
+\*-------------------------------------------------------------------*/
+
+@import "./6-components/header.css";
+@import "./6-components/menu.css";
+@import "./6-components/grid.css";
+@import "./6-components/aside.css";
+@import "./6-components/products.css";
+@import "./6-components/flex.css";
+@import "./6-components/footer.css";
+
+/*-------------------------------------------------------------------*\
+  UTILITIES - Utilitaires et !important (peu)
+\*-------------------------------------------------------------------*/

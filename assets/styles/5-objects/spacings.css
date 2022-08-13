@@ -1,0 +1,46 @@
+/*------------------------------------*\
+  spacings / objects
+\*------------------------------------*/
+
+
+.py-xsmall {
+    padding: var(--space-xsmall) 0;
+}
+
+.py-small {
+    padding: var(--space-small) 0;
+}
+
+.py-medium {
+    padding: var(--space-medium) 0;
+}
+
+.py-large {
+    padding: var(--space-large) 0;
+}
+
+.py-xlarge {
+    padding: var(--space-xlarge) 0;
+}
+
+/* padding bottom */
+
+.pb-xsmall {
+    padding-bottom: var(--space-xsmall);
+}
+
+.pb-small {
+    padding-bottom: var(--space-small);
+}
+
+.pb-medium {
+    padding-bottom: var(--space-medium);
+}
+
+.pb-large {
+    padding-bottom: var(--space-large);
+}
+
+.pb-xlarge {
+    padding-bottom: var(--space-xlarge);
+}

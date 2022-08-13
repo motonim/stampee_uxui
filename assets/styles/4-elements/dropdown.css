@@ -1,0 +1,33 @@
+/*------------------------------------*\
+  dropdown / elements
+\*------------------------------------*/
+
+.dropdown {
+    padding: 8px 24px 8px 10px;
+	border: none;
+    border-radius: 4px;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    max-width: 100%;
+    position: relative;
+    cursor: pointer;
+}
+
+.dropdown:active, 
+.dropdown:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* .dropdown:after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	right: 8px;
+	width: 0;
+	height: 0;
+	margin-top: -2px;
+	border-top: 5px solid #fff;
+	border-right: 5px solid #fff;
+	border-left: 5px solid #fff;
+} */

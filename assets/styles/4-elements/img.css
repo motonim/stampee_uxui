@@ -1,0 +1,18 @@
+/*------------------------------------*\
+  img / elements
+\*------------------------------------*/
+
+
+img {
+      width: 100%;
+}
+
+.img-mode-gallery {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.img-mode-list {
+  width: 20px;
+
+}

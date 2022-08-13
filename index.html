@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="fr_CA">
+<head>
+    <!-- meta -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Stampee</title>
+	<meta name="description" content="Stampee | Catalogue de produits">
+
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500&family=Vollkorn:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<!-- styles -->
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.css">
+</head>
+
+<body>
+
+    <!------------- header navigation ---------------------->
+    <header class="header">
+        <div class="wrapper">
+            <div class="header__content">
+                <div class="header__left">
+                    <div class="header__logo">
+                        <a href="index.html" class="header__logo-link">                            
+                            <img src="./assets/img/logo.svg" alt="logo stampee" class="header__logo-img">
+                        </a>
+                    </div>
+                    <div class="header__search">
+                        <form action="">
+                            <input type="search" id="header__search" class="header__input" name="q" placeholder="Rechercher des timbres">
+                            <button class="header__input-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="header__right">
+                    <div class="header__nav">
+                        <a href="#" class="header__nav-link">Enchères</a>
+                        <a href="#" class="header__nav-link">À Propos</a>
+                        <a href="#" class="header__nav-link header__nav-myaccount"><i class="compte fa-solid fa-user"></i>Mon Compte</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!------------- main ---------------------->
+    <div class="wrapper">
+        <main class="main flex py-xsmall">
+
+            <!------------- aside ---------------------->
+            <div class="aside">
+                <div class="aside__item">
+                    <p class="text__result">Résultat <span class="text__bold">102 / 102</span></p>
+                </div>
+                <div class="aside__item">
+                    <p class="aside__title">Catégorie</p>
+                    <div class="aside__category">
+                        <form action="">
+                            <div class="aside__category__item">
+                                <label class="checkbox">
+                                    <input type="checkbox" id="etatsUnis" name="etatsUnis" value="etatsUnis"/>
+                                    <div class="checkbox__checkmark"></div>
+                                    <div class="checkbox__body">États-Unis</div>
+                                </label>
+                            </div>
+
+                            <div class="aside__category__item">
+                                <label class="checkbox">
+                                    <input type="checkbox" id="canada" name="canada" value="canada"/>
+                                    <div class="checkbox__checkmark"></div>
+                                    <div class="checkbox__body">Canada</div>
+                                </label>
+                            </div>
+
+                            <div class="aside__category__item">
+                                <label class="checkbox">
+                                    <input type="checkbox" id="grandeBretagne" name="grandeBretagne" value="grandeBretagne"/>
+                                    <div class="checkbox__checkmark"></div>
+                                    <div class="checkbox__body">Grande-Bretagne</div>
+                                </label>
+                            </div>
+
+                            <div class="aside__category__item">
+                                <label class="checkbox">
+                                    <input type="checkbox" id="europe" name="europe" value="europe"/>
+                                    <div class="checkbox__checkmark"></div>
+                                    <div class="checkbox__body">Europe</div>
+                                </label>
+                            </div>
+
+                            <div class="aside__category__item">
+                                <label class="checkbox">
+                                    <input type="checkbox" id="caribbean" name="caribbean" value="caribbean"/>
+                                    <div class="checkbox__checkmark"></div>
+                                    <div class="checkbox__body">Caribbean</div>
+                                </label>
+                            </div>
+
+                            <div class="aside__category__item">
+                                <label class="checkbox">
+                                    <input type="checkbox" id="asie" name="asie" value="asie"/>
+                                    <div class="checkbox__checkmark"></div>
+                                    <div class="checkbox__body">Asie</div>
+                                </label>
+                            </div>
+
+                            <div class="aside__category__item">
+                                <label class="checkbox">
+                                    <input type="checkbox" id="ameriqueLatine" name="ameriqueLatine" value="ameriqueLatine"/>
+                                    <div class="checkbox__checkmark"></div>
+                                    <div class="checkbox__body">Amérique latine</div>
+                                </label>
+                            </div>
+
+                            <div class="aside__category__item">
+                                <label class="checkbox">
+                                    <input type="checkbox" id="mondeEntier" name="mondeEntier" value="mondeEntier"/>
+                                    <div class="checkbox__checkmark"></div>
+                                    <div class="checkbox__body">Monde entier</div>
+                                </label>
+                            </div>
+
+                            <div class="aside__category__item">
+                                <label class="checkbox">
+                                    <input type="checkbox" id="moyenOrient" name="moyenOrient" value="moyenOrient"/>
+                                    <div class="checkbox__checkmark"></div>
+                                    <div class="checkbox__body">Moyen-Orient</div>
+                                </label>
+                            </div>
+
+                            <div class="aside__category__item">
+                                <label class="checkbox">
+                                    <input type="checkbox" id="afrique" name="afrique" value="afrique"/>
+                                    <div class="checkbox__checkmark"></div>
+                                    <div class="checkbox__body">Afrique</div>
+                                </label>
+                            </div>
+
+                            <div class="aside__category__item">
+                                <label class="checkbox">
+                                    <input type="checkbox" id="australieOceanie" name="australieOceanie" value="australieOceanie"/>
+                                    <div class="checkbox__checkmark"></div>
+                                    <div class="checkbox__body">Australie et Océanie</div>
+                                </label>
+                            </div>
+                            <!-- <input type="submit" value="Submit"> -->
+                        </form>
+                    </div>
+                </div>
+                <div class="aside__item">
+                    <p class="aside__title">État</p>
+                    <div class="aside__category">
+                        <form action="">
+                            <div class="aside__category__item">
+                                <label class="checkbox">
+                                    <input type="checkbox" id="neuf" name="neuf" value="neuf"/>
+                                    <div class="checkbox__checkmark"></div>
+                                    <div class="checkbox__body">Neuf</div>
+                                </label>
+                            </div>
+
+                            <div class="aside__category__item">
+                                <label class="checkbox">
+                                    <input type="checkbox" id="occasion" name="occasion" value="occasion"/>
+                                    <div class="checkbox__checkmark"></div>
+                                    <div class="checkbox__body">D'occasion</div>
+                                </label>
+                            </div>
+
+                            <div class="aside__category__item">
+                                <label class="checkbox">
+                                    <input type="checkbox" id="none" name="none" value="none"/>
+                                    <div class="checkbox__checkmark"></div>
+                                    <div class="checkbox__body">Non Précisé</div>
+                                </label>
+                            </div>
+                            <!-- <input type="submit" value="Submit"> -->
+                        </form>
+                    </div>
+                </div>
+                <div class="aside__item">
+                    <p class="aside__title">Prix</p>
+                    <div class="aside__category">
+                        <form action="">
+                            <div class="aside__category__item">
+                                <label class="checkbox">
+                                    <input type="checkbox" id="moins10" name="moins10" value="moins10"/>
+                                    <div class="checkbox__checkmark"></div>
+                                    <div class="checkbox__body">Moins de $10</div>
+                                </label>
+                            </div>
+
+                            <div class="aside__category__item">
+                                <label class="checkbox">
+                                    <input type="checkbox" id="entre10et50" name="entre10et50" value="entre10et50"/>
+                                    <div class="checkbox__checkmark"></div>
+                                    <div class="checkbox__body">Entre $10 et $50</div>
+                                </label>
+                            </div>
+
+                            <div class="aside__category__item">
+                                <label class="checkbox">
+                                    <input type="checkbox" id="plusde10" name="plusde10" value="plusde10"/>
+                                    <div class="checkbox__checkmark"></div>
+                                    <div class="checkbox__body">Plus de $50</div>
+                                </label>
+                            </div>
+                            <!-- <input type="submit" value="Submit"> -->
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!------------- products ---------------------->
+            <div class="products">
+                <div class="products__settings flex">
+                    <div class="products__settings-mode flex">
+                        <div class="products__settings-mode--gallery">
+                            <a href="#">
+                                <img src="./assets/img/gallery_active.svg" alt="gallery mode" class="img-mode-gallery">
+                            </a>
+                        </div>
+                        <div class="products__settings-mode--liste">
+                            <a href="#">
+                                <img src="./assets/img/list_inactive.svg" alt="list mode" class="img-mode-list">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="products__settings-sort">
+                        <form action="">
+                            <select name="trier" id="trier" class="dropdown">
+                                <option value="meilleure">Trier par: Meilleure correspondance</option>
+                                <option value="prixCroissant">Trier par: Prix : par ordre croissant</option>
+                                <option value="prixDecroissant">Tri er par: Prix : par ordre décroissant</option>
+                                <option value="nouveautes">Trier par: Dernières nouveautés</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+                <div class="products__gallery grid grid--3">
+                    <article class="product">
+                        <a href="#" class="product__link">
+                            <div class="product__image">
+                                <img src="./assets/img/stamp1.jpeg" alt="stamp image" class="product__image-img">
+                            </div>
+                            <div class="product__text">
+                                <div class="product__title">
+                                    <p>Timbres 1849 a 1871. Du N01 au N060. Cérès, Napoléon... oblitérés ou non...</p>   
+                                </div>
+                                <div class="product__registration-time">
+                                    <p>Début: 2022-06-24</p>
+                                    <p>Fin: 2022-10-20</p>
+                                </div>
+                                <div class="product__closes-in">
+                                    <p class="product__closes-in-time">21j 20h 08m 07s</p>
+                                </div>
+                                <div class="product__bid">
+                                    <p>Départ: 25$</p>
+                                    <p>Actuel: 30$</p>
+                                </div>
+                                <div class="product__bid-number">
+                                    <p>Mise: 13</p>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="product">
+                        <a href="#" class="product__link">
+                            <div class="product__image">
+                                <img src="./assets/img/stamp2.jpeg" alt="stamp image" class="product__image-img">
+                            </div>
+                            <div class="product__text">
+                                <div class="product__title">
+                                    <p>Korea stamp lot #4</p>   
+                                </div>
+                                <div class="product__registration-time">
+                                    <p>Début: 2022-06-24</p>
+                                    <p>Fin: 2022-10-20</p>
+                                </div>
+                                <div class="product__closes-in">
+                                    <p class="product__closes-in-time">21j 20h 08m 07s</p>
+                                </div>
+                                <div class="product__bid">
+                                    <p>Départ: 25$</p>
+                                    <p>Actuel: 30$</p>
+                                </div>
+                                <div class="product__bid-number">
+                                    <p>Mise: 13</p>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="product">
+                        <a href="#" class="product__link">
+                            <div class="product__image">
+                                <img src="./assets/img/stamp3.jpg" alt="stamp image" class="product__image-img">
+                            </div>
+                            <div class="product__text">
+                                <div class="product__title">
+                                    <p>KOREA - VALUABLE ALL MNH COLLECTION - MOST OLDER</p>   
+                                </div>
+                                <div class="product__registration-time">
+                                    <p>Début: 2022-06-24</p>
+                                    <p>Fin: 2022-10-20</p>
+                                </div>
+                                <div class="product__closes-in">
+                                    <p class="product__closes-in-time">21j 20h 08m 07s</p>
+                                </div>
+                                <div class="product__bid">
+                                    <p>Départ: 25$</p>
+                                    <p>Actuel: 30$</p>
+                                </div>
+                                <div class="product__bid-number">
+                                    <p>Mise: 13</p>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="product">
+                        <a href="#" class="product__link">
+                            <div class="product__image">
+                                <img src="./assets/img/stamp4.jpeg" alt="stamp image" class="product__image-img">
+                            </div>
+                            <div class="product__text">
+                                <div class="product__title">
+                                    <p>298 MONTENEGRO 2018 - Winter Paralympic Games</p>   
+                                </div>
+                                <div class="product__registration-time">
+                                    <p>Début: 2022-06-24</p>
+                                    <p>Fin: 2022-10-20</p>
+                                </div>
+                                <div class="product__closes-in">
+                                    <p class="product__closes-in-time">21j 20h 08m 07s</p>
+                                </div>
+                                <div class="product__bid">
+                                    <p>Départ: 25$</p>
+                                    <p>Actuel: 30$</p>
+                                </div>
+                                <div class="product__bid-number">
+                                    <p>Mise: 13</p>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="product">
+                        <a href="#" class="product__link">
+                            <div class="product__image">
+                                <img src="./assets/img/stamp5.jpeg" alt="stamp image" class="product__image-img">
+                            </div>
+                            <div class="product__text">
+                                <div class="product__title">
+                                    <p>Timbres 1849 a 1871. Du N01 au N060. Cérès, Napoléon... oblitérés ou non...</p>   
+                                </div>
+                                <div class="product__registration-time">
+                                    <p>Début: 2022-06-24</p>
+                                    <p>Fin: 2022-10-20</p>
+                                </div>
+                                <div class="product__closes-in">
+                                    <p class="product__closes-in-time">21j 20h 08m 07s</p>
+                                </div>
+                                <div class="product__bid">
+                                    <p>Départ: 25$</p>
+                                    <p>Actuel: 30$</p>
+                                </div>
+                                <div class="product__bid-number">
+                                    <p>Mise: 13</p>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="product">
+                        <a href="#" class="product__link">
+                            <div class="product__image">
+                                <img src="./assets/img/stamp6.jpeg" alt="stamp image" class="product__image-img">
+                            </div>
+                            <div class="product__text">
+                                <div class="product__title">
+                                    <p>Korea stamp lot #4</p>   
+                                </div>
+                                <div class="product__registration-time">
+                                    <p>Début: 2022-06-24</p>
+                                    <p>Fin: 2022-10-20</p>
+                                </div>
+                                <div class="product__closes-in">
+                                    <p class="product__closes-in-time">21j 20h 08m 07s</p>
+                                </div>
+                                <div class="product__bid">
+                                    <p>Départ: 25$</p>
+                                    <p>Actuel: 30$</p>
+                                </div>
+                                <div class="product__bid-number">
+                                    <p>Mise: 13</p>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="product">
+                        <a href="#" class="product__link">
+                            <div class="product__image">
+                                <img src="./assets/img/stamp7.jpeg" alt="stamp image" class="product__image-img">
+                            </div>
+                            <div class="product__text">
+                                <div class="product__title">
+                                    <p>298 MONTENEGRO 2018 - Winter Paralympic Games</p>   
+                                </div>
+                                <div class="product__registration-time">
+                                    <p>Début: 2022-06-24</p>
+                                    <p>Fin: 2022-10-20</p>
+                                </div>
+                                <div class="product__closes-in">
+                                    <p class="product__closes-in-time">21j 20h 08m 07s</p>
+                                </div>
+                                <div class="product__bid">
+                                    <p>Départ: 25$</p>
+                                    <p>Actuel: 30$</p>
+                                </div>
+                                <div class="product__bid-number">
+                                    <p>Mise: 13</p>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="product">
+                        <a href="#" class="product__link">
+                            <div class="product__image">
+                                <img src="./assets/img/stamp8.jpeg" alt="stamp image" class="product__image-img">
+                            </div>
+                            <div class="product__text">
+                                <div class="product__title">
+                                    <p>KOREA - VALUABLE ALL MNH COLLECTION - MOST OLDER</p>   
+                                </div>
+                                <div class="product__registration-time">
+                                    <p>Début: 2022-06-24</p>
+                                    <p>Fin: 2022-10-20</p>
+                                </div>
+                                <div class="product__closes-in">
+                                    <p class="product__closes-in-time">21j 20h 08m 07s</p>
+                                </div>
+                                <div class="product__bid">
+                                    <p>Départ: 25$</p>
+                                    <p>Actuel: 30$</p>
+                                </div>
+                                <div class="product__bid-number">
+                                    <p>Mise: 13</p>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="product">
+                        <a href="#" class="product__link">
+                            <div class="product__image">
+                                <img src="./assets/img/stamp9.jpeg" alt="stamp image" class="product__image-img">
+                            </div>
+                            <div class="product__text">
+                                <div class="product__title">
+                                    <p>Timbres 1849 a 1871. Du N01 au N060. Cérès, Napoléon... oblitérés ou non...</p>   
+                                </div>
+                                <div class="product__registration-time">
+                                    <p>Début: 2022-06-24</p>
+                                    <p>Fin: 2022-10-20</p>
+                                </div>
+                                <div class="product__closes-in">
+                                    <p class="product__closes-in-time">21j 20h 08m 07s</p>
+                                </div>
+                                <div class="product__bid">
+                                    <p>Départ: 25$</p>
+                                    <p>Actuel: 30$</p>
+                                </div>
+                                <div class="product__bid-number">
+                                    <p>Mise: 13</p>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+
+                <!------------- pagination  ------------>
+                <div class="pagination py-small">
+                    <span class="pagination__item pagination__button inactive"><img src="./assets/img/arrow_left_inactive.svg" alt="inactive left arrow"></span>
+                    <span class="pagination__item pagination__page inactive">1</span>
+                    <span class="pagination__item pagination__page active">
+                        <a href="#">2</a>
+                    </span>
+                    <span class="pagination__item pagination__page active">
+                        <a href="#">3</a>
+                    </span>
+                    <span class="pagination__item pagination__page active">
+                        <a href="#">4</a>
+                    </span>
+                    <span class="pagination__item pagination__page active">
+                        <a href="#">5</a>
+                    </span>
+                    <span class="pagination__item pagination__page active">
+                        <a href="#">6</a>
+                    </span>
+                    <span class="pagination__item pagination__page active">
+                        <a href="#">7</a>
+                    </span>
+                    <span class="pagination__item pagination__page active">
+                        <a href="#">8</a>
+                    </span>
+                    <span class="pagination__item pagination__page active">
+                        <a href="#">9</a>
+                    </span>
+                    <span class="pagination__item pagination__button active">
+                        <a href="#">
+                            <img src="./assets/img/arrow_right_active.svg" alt="active right arrow">
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </main>
+    </div>
+    <!-------------footer  ------------------->
+    <footer class="footer py-small">
+        <div class="wrapper">
+            <div class="footer__logo-wrapper">
+                <a href="#">
+                    <img src="./assets/img/logo_footer.svg" alt="letter logo in footer" class="footer__logo">
+                </a>
+            </div>
+            <div class="footer__link-wrapper">
+                <div class="footer__col--md">
+                    <a href="#" class="footer__link-wrapper__link-membre">Devenir membre</a>
+                    <p class="footer__link-wrapper__title">Se connecter</p>
+                    <a href="#" class="footer__link-wrapper__link">Votre Profil</a>
+                </div> 
+                <div class="footer__col--md">
+                    <p class="footer__link-wrapper__title">À propos de Lord Reginald Stampee III</p>
+                    <a href="#" class="footer__link-wrapper__link">La philatélie, c'est la vie</a>
+                    <a href="#" class="footer__link-wrapper__link">Biographie du Lord</a>
+                    <a href="#" class="footer__link-wrapper__link">Historique familial</a>
+                </div> 
+                <div class="footer__col--sm">
+                    <p class="footer__link-wrapper__title">Actualités</p>
+                    <a href="#" class="footer__link-wrapper__link">Timbres</a>
+                    <a href="#" class="footer__link-wrapper__link">Enchères</a>
+                    <a href="#" class="footer__link-wrapper__link">Bridge</a>
+                </div> 
+                <div class="footer__col--lg">
+                    <p class="footer__link-wrapper__title">Fonctionnement de la plateforme</p>
+                    <a href="#" class="footer__link-wrapper__link">Aide 'Profile'</a>
+                    <a href="#" class="footer__link-wrapper__link">Aide 'Comment placer une offre'</a>
+                    <a href="#" class="footer__link-wrapper__link">Aide 'Suivre une enchère'</a>
+                    <a href="#" class="footer__link-wrapper__link">Aide 'Trouver l'enchère désirée'</a>
+                    <a href="#" class="footer__link-wrapper__link">Connecter le webmestre</a>
+                </div> 
+                <div class="footer__col--md">
+                    <p class="footer__link-wrapper__title">Contactez-nous</p>
+                    <a href="#" class="footer__link-wrapper__link">Angleterre</a>
+                    <a href="#" class="footer__link-wrapper__link">Canada</a>
+                    <a href="#" class="footer__link-wrapper__link">US</a>
+                    <a href="#" class="footer__link-wrapper__link">Australie</a>
+                </div> 
+            </div>
+        </div>
+    </footer>
+    <div class="footer__bottom">
+        <div class="wrapper">
+            <div class="footer__bottom-nav">
+                <a href="#">Termes et conditions</a>
+                <a href="#">Modalités d'utilisation du site web</a>
+                <a href="#">Politique de vie privée</a>
+            </div>
+            <div class="footer__bottom-copyright">
+                <p>&copy; <span id="copyright-year"></span> Jaeri Park. Tous droits réservés</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById("copyright-year").innerHTML = new Date().getFullYear();
+    </script>
+</body>
+</html>

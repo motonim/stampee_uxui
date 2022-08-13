@@ -1,0 +1,47 @@
+/*------------------------------------*\
+  pagination / elements
+\*------------------------------------*/
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-primary);
+    font-weight: 300;
+    color: var(--color-gray);
+}
+
+.pagination__item + .pagination__item{
+    margin-left: 2rem;
+}
+
+.pagination__button {
+    display: flex;
+    align-items: center;
+    width: 40px;
+}
+
+.pagination__page {
+    font-size: 1.2rem;
+}
+
+.pagination__page.inactive {
+    font-weight: 600;
+    color: var(--color-black);
+    position: relative;
+}
+
+.pagination__page.inactive::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: -4px;
+    height: 2px;
+    background-color: var(--color-black);
+    width: 20px;
+}
+
+.pagination__page.active:hover {
+    font-weight: 600;
+    color: var(--color-black);
+}

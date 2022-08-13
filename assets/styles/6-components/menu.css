@@ -1,0 +1,62 @@
+/*------------------------------------*\
+  menu / components
+\*------------------------------------*/
+
+
+.menu {
+    display: flex;
+    font-size: 1.5vw;
+}
+
+.menu--main {
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.menu--sm {
+    align-items: center;
+}
+
+.menu + .menu {
+    margin-left: 4vw;
+}
+
+.menu__logo {
+    font-size: 2.5vw;
+    font-weight: 600;
+}
+
+.menu__link {
+    color: black;
+    display: flex;
+    font-size: inherit;
+}
+
+.menu__list {
+    display: flex;
+}
+
+.menu__item {
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+
+.menu__item--active::after {
+    content: "";
+    background-color: black;
+    bottom: 0;
+    height: 2px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.menu__item + .menu__item {
+    margin-left: 1.5vw;
+}
+
+.menu__icon {
+    height: 1.75vw;
+    width: 1.75vw;
+}

@@ -1,0 +1,15 @@
+/*------------------------------------*\
+  footer / components
+\*------------------------------------*/
+
+.footer {
+    background-color: var(--color-primary);
+}
+
+.footer__bottom {
+    background-color: #14557D;
+}
+
+.footer__logo {
+    width: 20%;
+}

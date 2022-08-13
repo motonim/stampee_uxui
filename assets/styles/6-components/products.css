@@ -1,0 +1,14 @@
+/*------------------------------------*\
+  gallery / components
+\*------------------------------------*/
+
+
+.products {
+      width: 75%;
+      /* background-color: gray; */
+      /* margin-top: 30px; */
+}
+
+.products__settings {
+  margin-bottom: 20px;
+}
