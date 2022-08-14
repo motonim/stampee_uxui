@@ -19,6 +19,10 @@
     box-shadow: none;
 }
 
+/* .dropdown select option {
+	padding: 10px;
+} */
+
 /* .dropdown:after {
 	content: "";
 	position: absolute;

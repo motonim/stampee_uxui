@@ -3,7 +3,9 @@
 \*------------------------------------*/
 
 
-.product {
+/* ------ products--gallery ---------- */
+
+.products--gallery .product {
     background-color: white;
     cursor: pointer;
     display: flex;
@@ -13,9 +15,16 @@
     border-radius: 5px;
     overflow: hidden;
     box-shadow: 0px 5px 7px 1px rgba(153,153,153,0.175);
+
+    transition: all .3s ease-in-out;
 }
 
-.product__image {
+.products--gallery .product:hover {
+    scale: 1.025;
+    box-shadow: 0px 5px 7px 1px rgba(153,153,153,0.3);
+}
+
+.products--gallery .product__image {
     position: relative;
     height: 250px;
     display: flex;
@@ -46,7 +55,7 @@
 
 .product__text {
     max-height: 400px;
-    padding: var(--space-base) calc(var(--space-base)*2);
+    padding: calc(var(--space-base)*2) var(--space-xsmall);
 }
 
 @media only screen and (min-width: 1600px) {
@@ -76,4 +85,63 @@
 
 .product__closes-in-time {
     font-weight: 600;
+}
+
+
+/* ----------------- products--list -------------------- */
+
+.products--list .product {
+    box-shadow: 0px 5px 7px 1px rgba(153,153,153,0.175);
+    transition: all .3s ease-in-out;
+}
+
+.products--list .product:hover {
+    scale: 1.025;
+    box-shadow: 0px 5px 7px 1px rgba(153,153,153,0.3);
+}
+
+.products--list .product + .product {
+    margin-top: 20px;
+
+}
+
+
+.products--list .product .product__link{
+    display: flex;
+    justify-content: space-between;
+    height: 250px;
+
+}
+
+
+.products--list .product__image {
+    width: 35%;
+
+
+    position: relative;
+    /* align-items: center; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* padding-top: 125%; */
+    /* height: 20vw;
+    min-height: 200px;
+    width: 100%; */
+    overflow: hidden;
+    background-color: var(--color-ivory);
+}
+
+.products--list .product__text {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.products--list .product__text .flex div:last-child {
+    padding-right: 40px;
+}
+
+.products--list .product__title p {
+    padding-top: var(--space-base);
 }
