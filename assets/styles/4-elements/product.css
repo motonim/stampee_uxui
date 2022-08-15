@@ -55,7 +55,7 @@
 
 .product__text {
     max-height: 400px;
-    padding: calc(var(--space-base)*2) var(--space-xsmall);
+    padding: calc(var(--space-base)*2);
 }
 
 @media only screen and (min-width: 1600px) {

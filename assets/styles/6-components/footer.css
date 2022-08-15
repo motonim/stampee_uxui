@@ -44,9 +44,9 @@ a.footer__link-wrapper__link-membre {
 }
 
 a.footer__link-wrapper__link-membre:hover {
-    /* color: #FF4365; */
+    color: #FF4365;
     /* color: #D64550; */
-    color: #E3170A;
+    /* color: #E3170A; */
 }
 
 .footer__link-wrapper__link {
