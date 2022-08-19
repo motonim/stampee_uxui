@@ -6,3 +6,10 @@
     display: flex;
     justify-content: space-between;
 }
+
+.flex--column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}

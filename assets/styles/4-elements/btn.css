@@ -6,3 +6,31 @@ button {
       border: none;  
       background: none;
 }
+
+.btn--primary {
+  padding: 10px 50px;
+  border-radius: 15px;
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  font-weight: 600;
+
+  transition: background-color .3s ease-in;
+}
+
+.btn--primary:hover {
+  background-color: var(--color-secondary);
+}
+
+.btn--link {
+  color: var(--color-primary);
+}
+
+.btn--link-icon {
+  margin-left: 20px;
+  transition: transform .3s ease-in-out;
+}
+
+.btn--link:hover .btn--link-icon,
+.btn--link-icon:hover {
+  transform: translateX(8px)
+}

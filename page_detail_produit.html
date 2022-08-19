@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Stampee</title>
+	<title>Stampee | Détails du produit</title>
 	<meta name="description" content="Stampee | Catalogue de produits">
 
     <!-- google font -->
@@ -13,6 +13,10 @@
 
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
 
 	<!-- styles -->
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.css">
@@ -51,526 +55,103 @@
 
     <!------------- main ---------------------->
     <div class="wrapper">
-        <main class="main flex py-xsmall">
-
-            <!------------- aside ---------------------->
-            <div class="aside">
-                <div class="aside__item">
-                    <p class="text__result">Résultat <span class="text__bold">102 / 102</span></p>
-                </div>
-                <div class="aside__item">
-                    <p class="aside__title">Catégorie</p>
-                    <div class="aside__category">
-                        <form action="">
-                            <div class="aside__category__item">
-                                <label class="checkbox">
-                                    <input type="checkbox" id="etatsUnis" name="etatsUnis" value="etatsUnis"/>
-                                    <div class="checkbox__checkmark"></div>
-                                    <div class="checkbox__body">États-Unis</div>
-                                </label>
-                            </div>
-
-                            <div class="aside__category__item">
-                                <label class="checkbox">
-                                    <input type="checkbox" id="canada" name="canada" value="canada"/>
-                                    <div class="checkbox__checkmark"></div>
-                                    <div class="checkbox__body">Canada</div>
-                                </label>
-                            </div>
-
-                            <div class="aside__category__item">
-                                <label class="checkbox">
-                                    <input type="checkbox" id="grandeBretagne" name="grandeBretagne" value="grandeBretagne"/>
-                                    <div class="checkbox__checkmark"></div>
-                                    <div class="checkbox__body">Grande-Bretagne</div>
-                                </label>
-                            </div>
-
-                            <div class="aside__category__item">
-                                <label class="checkbox">
-                                    <input type="checkbox" id="europe" name="europe" value="europe"/>
-                                    <div class="checkbox__checkmark"></div>
-                                    <div class="checkbox__body">Europe</div>
-                                </label>
-                            </div>
-
-                            <div class="aside__category__item">
-                                <label class="checkbox">
-                                    <input type="checkbox" id="caribbean" name="caribbean" value="caribbean"/>
-                                    <div class="checkbox__checkmark"></div>
-                                    <div class="checkbox__body">Caribbean</div>
-                                </label>
-                            </div>
-
-                            <div class="aside__category__item">
-                                <label class="checkbox">
-                                    <input type="checkbox" id="asie" name="asie" value="asie"/>
-                                    <div class="checkbox__checkmark"></div>
-                                    <div class="checkbox__body">Asie</div>
-                                </label>
-                            </div>
-
-                            <div class="aside__category__item">
-                                <label class="checkbox">
-                                    <input type="checkbox" id="ameriqueLatine" name="ameriqueLatine" value="ameriqueLatine"/>
-                                    <div class="checkbox__checkmark"></div>
-                                    <div class="checkbox__body">Amérique latine</div>
-                                </label>
-                            </div>
-
-                            <div class="aside__category__item">
-                                <label class="checkbox">
-                                    <input type="checkbox" id="mondeEntier" name="mondeEntier" value="mondeEntier"/>
-                                    <div class="checkbox__checkmark"></div>
-                                    <div class="checkbox__body">Monde entier</div>
-                                </label>
-                            </div>
-
-                            <div class="aside__category__item">
-                                <label class="checkbox">
-                                    <input type="checkbox" id="moyenOrient" name="moyenOrient" value="moyenOrient"/>
-                                    <div class="checkbox__checkmark"></div>
-                                    <div class="checkbox__body">Moyen-Orient</div>
-                                </label>
-                            </div>
-
-                            <div class="aside__category__item">
-                                <label class="checkbox">
-                                    <input type="checkbox" id="afrique" name="afrique" value="afrique"/>
-                                    <div class="checkbox__checkmark"></div>
-                                    <div class="checkbox__body">Afrique</div>
-                                </label>
-                            </div>
-
-                            <div class="aside__category__item">
-                                <label class="checkbox">
-                                    <input type="checkbox" id="australieOceanie" name="australieOceanie" value="australieOceanie"/>
-                                    <div class="checkbox__checkmark"></div>
-                                    <div class="checkbox__body">Australie et Océanie</div>
-                                </label>
-                            </div>
-                            <!-- <input type="submit" value="Submit"> -->
-                        </form>
-                    </div>
-                </div>
-                <div class="aside__item">
-                    <p class="aside__title">État</p>
-                    <div class="aside__category">
-                        <form action="">
-                            <div class="aside__category__item">
-                                <label class="checkbox">
-                                    <input type="checkbox" id="neuf" name="neuf" value="neuf"/>
-                                    <div class="checkbox__checkmark"></div>
-                                    <div class="checkbox__body">Neuf</div>
-                                </label>
-                            </div>
-
-                            <div class="aside__category__item">
-                                <label class="checkbox">
-                                    <input type="checkbox" id="occasion" name="occasion" value="occasion"/>
-                                    <div class="checkbox__checkmark"></div>
-                                    <div class="checkbox__body">D'occasion</div>
-                                </label>
-                            </div>
-
-                            <div class="aside__category__item">
-                                <label class="checkbox">
-                                    <input type="checkbox" id="none" name="none" value="none"/>
-                                    <div class="checkbox__checkmark"></div>
-                                    <div class="checkbox__body">Non Précisé</div>
-                                </label>
-                            </div>
-                            <!-- <input type="submit" value="Submit"> -->
-                        </form>
-                    </div>
-                </div>
-                <div class="aside__item">
-                    <p class="aside__title">Prix</p>
-                    <div class="aside__category">
-                        <form action="">
-                            <div class="aside__category__item">
-                                <label class="checkbox">
-                                    <input type="checkbox" id="moins10" name="moins10" value="moins10"/>
-                                    <div class="checkbox__checkmark"></div>
-                                    <div class="checkbox__body">Moins de $10</div>
-                                </label>
-                            </div>
-
-                            <div class="aside__category__item">
-                                <label class="checkbox">
-                                    <input type="checkbox" id="entre10et50" name="entre10et50" value="entre10et50"/>
-                                    <div class="checkbox__checkmark"></div>
-                                    <div class="checkbox__body">Entre $10 et $50</div>
-                                </label>
-                            </div>
-
-                            <div class="aside__category__item">
-                                <label class="checkbox">
-                                    <input type="checkbox" id="plusde10" name="plusde10" value="plusde10"/>
-                                    <div class="checkbox__checkmark"></div>
-                                    <div class="checkbox__body">Plus de $50</div>
-                                </label>
-                            </div>
-                            <!-- <input type="submit" value="Submit"> -->
-                        </form>
-                    </div>
-                </div>
-            </div>
-
-            <!------------- products ---------------------->
-            <div class="products">
-                <div class="products__settings flex">
-                    <div class="products__settings-mode flex">
-                        <div class="products__settings-mode--gallery">
-                            <a href="#">
-                                <img src="./assets/img/gallery_active.svg" alt="gallery mode" class="img-mode-gallery">
-                            </a>
+        <main class="main py-small">
+            <div class="detail__product">
+                <div class="detail__img-text flex">
+                    <div class="detail__img-wrapper">
+                        <div class="detail__img">                        
+                            <img src="./assets/img/stamp_canada_front.jpg" alt="stamp image" class="product__image-img">
                         </div>
-                        <div class="products__settings-mode--liste">
-                            <a href="#">
-                                <img src="./assets/img/list_inactive.svg" alt="list mode" class="img-mode-list">
-                            </a>
+                        <p class="detail__img-enlarge">Passez la souris sur l'image pour l'agrandir</p>
+                        <div class="detail__img-more">
+                            <div class="detail__img-more-wrapper">
+                                <img src="./assets/img/stamp_canada_front.jpg" alt="stamp image front" class="detail__img-more__item">
+                            </div>
+                            <div class="detail__img-more-wrapper">
+                                <img src="./assets/img/stamp_canada_back.jpg" alt="stamp image back" class="detail__img-more__item">
+                            </div>
                         </div>
                     </div>
-                    <div class="products__settings-sort">
-                        <form action="">
-                            <select name="trier" id="trier" class="dropdown">
-                                <option value="meilleure">Trier par: Meilleure correspondance</option>
-                                <option value="prixCroissant">Trier par: Prix : par ordre croissant</option>
-                                <option value="prixDecroissant">Tri er par: Prix : par ordre décroissant</option>
-                                <option value="nouveautes">Trier par: Dernières nouveautés</option>
-                            </select>
-                        </form>
+                    <div class="detail__text-wrapper">
+                        <div class="flex--column">
+                            <div>
+                                <div class="product__title">
+                                    <p>Pâte et papier - 20 cents 1956 - Timbre du Canada</p>   
+                                </div>
+                                <div class="product__registration-time">
+                                    <p>Début: 2022-06-24</p>
+                                    <p>Fin: 2022-10-20</p>
+                                </div>
+                                <div class="product__closes-in">
+                                    <p class="product__closes-in-time">Temps restant : 21j 20h 08m 07s</p>
+                                </div>
+                                <div class="product__bid">
+                                    <p>Départ: 25$</p>
+                                    <p>Actuel: 30$</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex">
+                                    <div class="product__bid-number">
+                                        <p>Mise: 13</p>
+                                    </div> 
+                                    <div class="product__bid-btn">
+                                        <a href="#" class="btn--primary">Enchérir</a>
+                                    </div> 
+                                </div>         
+                            </div>
+                        </div>          
                     </div>
                 </div>
-                <div class="products--list">
-                    <article class="product">
-                        <a href="#" class="product__link">
-                            <div class="product__image">
-                                <img src="./assets/img/stamp1.jpeg" alt="stamp image" class="product__image-img">
+                <div class="detail__info py-small">
+                    <div class="detail__info__desc">
+                        <p class="detail__info__desc-text">La valeur d'un timbre de Pâte et papier - 20 cents 1956 varie en fonction de sa rareté, son état de conservation, de l'offre et la demande ansi que de plusieurs autres facteurs. Les valeurs affichées dans cette section sont basées sur le marché, les tendances, les enchères et les publications reconnues. Cette section regroupe également des informations concernant les caractéristiques et les erreurs et variétés. Il n'a été tiré qu'à quelques centaines d'exemplaires à ma connaissance et on le voit rarement à la vente, il est systématiquement introuvable de nos jours. Il est en parfait état.</p>
+                        <div class="detail__info__desc-block py-xsmall">
+                            <div class="detail__info__desc-block--left">
+                                <p>Couleur(s)</p>
+                                <p>Dimension</p>
+                                <p>Origine Géographique</p>
+                                <p>De (Année du timbre le plus ancien)</p>
+                                <p>À (Année du timbre le plus ancien)</p>
+                                <p>État</p>
+                                <p>Certifié</p>
                             </div>
-                            <div class="product__text">
-                                <div class="product__title">
-                                    <p>Timbres 1849 a 1871. Du N01 au N060. Cérès, Napoléon... oblitérés ou non...</p>   
-                                </div>
-                                <div class="flex">
-                                    <div>
-                                        <div class="product__registration-time">
-                                            <p>Début: 2022-06-24</p>
-                                            <p>Fin: 2022-10-20</p>
-                                        </div>
-                                        <div class="product__closes-in">
-                                            <p class="product__closes-in-time">21j 20h 08m 07s</p>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="product__bid">
-                                            <p>Départ: 25$</p>
-                                            <p>Actuel: 30$</p>
-                                        </div>
-                                        <div class="product__bid-number">
-                                            <p>Mise: 13</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                
+                            <div class="detail__info__desc-block--right">
+                                <p>Vert</p>
+                                <p>17mm x 20mm</p>
+                                <p>Corée Du Sud</p>
+                                <p>1904</p>
+                                <p>1904</p>
+                                <p>Neuf</p>
+                                <p>Oui</p>
                             </div>
-                        </a>
-                    </article>
-                    <article class="product">
-                        <a href="#" class="product__link">
-                            <div class="product__image">
-                                <img src="./assets/img/stamp2.jpeg" alt="stamp image" class="product__image-img">
-                            </div>
-                            <div class="product__text">
-                                <div class="product__title">
-                                    <p>Korea stamp lot #4</p>   
-                                </div>
-                                <div class="flex">
-                                    <div>
-                                        <div class="product__registration-time">
-                                            <p>Début: 2022-06-24</p>
-                                            <p>Fin: 2022-10-20</p>
-                                        </div>
-                                        <div class="product__closes-in">
-                                            <p class="product__closes-in-time">21j 20h 08m 07s</p>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="product__bid">
-                                            <p>Départ: 25$</p>
-                                            <p>Actuel: 30$</p>
-                                        </div>
-                                        <div class="product__bid-number">
-                                            <p>Mise: 13</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </article>
-                    <article class="product">
-                        <a href="#" class="product__link">
-                            <div class="product__image">
-                                <img src="./assets/img/stamp3.jpg" alt="stamp image" class="product__image-img">
-                            </div>
-                            <div class="product__text">
-                                <div class="product__title">
-                                    <p>KOREA - VALUABLE ALL MNH COLLECTION - MOST OLDER</p>   
-                                </div>
-                                <div class="flex">
-                                    <div>
-                                        <div class="product__registration-time">
-                                            <p>Début: 2022-06-24</p>
-                                            <p>Fin: 2022-10-20</p>
-                                        </div>
-                                        <div class="product__closes-in">
-                                            <p class="product__closes-in-time">21j 20h 08m 07s</p>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="product__bid">
-                                            <p>Départ: 25$</p>
-                                            <p>Actuel: 30$</p>
-                                        </div>
-                                        <div class="product__bid-number">
-                                            <p>Mise: 13</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </article>
-                    <article class="product">
-                        <a href="#" class="product__link">
-                            <div class="product__image">
-                                <img src="./assets/img/stamp4.jpeg" alt="stamp image" class="product__image-img">
-                            </div>
-                            <div class="product__text">
-                                <div class="product__title">
-                                    <p>298 MONTENEGRO 2018 - Winter Paralympic Games</p>   
-                                </div>
-                                <div class="flex">
-                                    <div>
-                                        <div class="product__registration-time">
-                                            <p>Début: 2022-06-24</p>
-                                            <p>Fin: 2022-10-20</p>
-                                        </div>
-                                        <div class="product__closes-in">
-                                            <p class="product__closes-in-time">21j 20h 08m 07s</p>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="product__bid">
-                                            <p>Départ: 25$</p>
-                                            <p>Actuel: 30$</p>
-                                        </div>
-                                        <div class="product__bid-number">
-                                            <p>Mise: 13</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </article>
-                    <article class="product">
-                        <a href="#" class="product__link">
-                            <div class="product__image">
-                                <img src="./assets/img/stamp5.jpeg" alt="stamp image" class="product__image-img">
-                            </div>
-                            <div class="product__text">
-                                <div class="product__title">
-                                    <p>Timbres 1849 a 1871. Du N01 au N060. Cérès, Napoléon... oblitérés ou non...</p>   
-                                </div>
-                                <div class="flex">
-                                    <div>
-                                        <div class="product__registration-time">
-                                            <p>Début: 2022-06-24</p>
-                                            <p>Fin: 2022-10-20</p>
-                                        </div>
-                                        <div class="product__closes-in">
-                                            <p class="product__closes-in-time">21j 20h 08m 07s</p>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="product__bid">
-                                            <p>Départ: 25$</p>
-                                            <p>Actuel: 30$</p>
-                                        </div>
-                                        <div class="product__bid-number">
-                                            <p>Mise: 13</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </article>
-                    <article class="product">
-                        <a href="#" class="product__link">
-                            <div class="product__image">
-                                <img src="./assets/img/stamp6.jpeg" alt="stamp image" class="product__image-img">
-                            </div>
-                            <div class="product__text">
-                                <div class="product__title">
-                                    <p>Korea stamp lot #4</p>   
-                                </div>
-                                <div class="flex">
-                                    <div>
-                                        <div class="product__registration-time">
-                                            <p>Début: 2022-06-24</p>
-                                            <p>Fin: 2022-10-20</p>
-                                        </div>
-                                        <div class="product__closes-in">
-                                            <p class="product__closes-in-time">21j 20h 08m 07s</p>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="product__bid">
-                                            <p>Départ: 25$</p>
-                                            <p>Actuel: 30$</p>
-                                        </div>
-                                        <div class="product__bid-number">
-                                            <p>Mise: 13</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </article>
-                    <article class="product">
-                        <a href="#" class="product__link">
-                            <div class="product__image">
-                                <img src="./assets/img/stamp7.jpeg" alt="stamp image" class="product__image-img">
-                            </div>
-                            <div class="product__text">
-                                <div class="product__title">
-                                    <p>298 MONTENEGRO 2018 - Winter Paralympic Games</p>   
-                                </div>
-                                <div class="flex">
-                                    <div>
-                                        <div class="product__registration-time">
-                                            <p>Début: 2022-06-24</p>
-                                            <p>Fin: 2022-10-20</p>
-                                        </div>
-                                        <div class="product__closes-in">
-                                            <p class="product__closes-in-time">21j 20h 08m 07s</p>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="product__bid">
-                                            <p>Départ: 25$</p>
-                                            <p>Actuel: 30$</p>
-                                        </div>
-                                        <div class="product__bid-number">
-                                            <p>Mise: 13</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </article>
-                    <article class="product">
-                        <a href="#" class="product__link">
-                            <div class="product__image">
-                                <img src="./assets/img/stamp8.jpeg" alt="stamp image" class="product__image-img">
-                            </div>
-                            <div class="product__text">
-                                <div class="product__title">
-                                    <p>KOREA - VALUABLE ALL MNH COLLECTION - MOST OLDER</p>   
-                                </div>
-                                <div class="flex">
-                                    <div>
-                                        <div class="product__registration-time">
-                                            <p>Début: 2022-06-24</p>
-                                            <p>Fin: 2022-10-20</p>
-                                        </div>
-                                        <div class="product__closes-in">
-                                            <p class="product__closes-in-time">21j 20h 08m 07s</p>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="product__bid">
-                                            <p>Départ: 25$</p>
-                                            <p>Actuel: 30$</p>
-                                        </div>
-                                        <div class="product__bid-number">
-                                            <p>Mise: 13</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </article>
-                    <article class="product">
-                        <a href="#" class="product__link">
-                            <div class="product__image">
-                                <img src="./assets/img/stamp9.jpeg" alt="stamp image" class="product__image-img">
-                            </div>
-                            <div class="product__text">
-                                <div class="product__title">
-                                    <p>Timbres 1849 a 1871. Du N01 au N060. Cérès, Napoléon... oblitérés ou non...</p>   
-                                </div>
-                                <div class="flex">
-                                    <div>
-                                        <div class="product__registration-time">
-                                            <p>Début: 2022-06-24</p>
-                                            <p>Fin: 2022-10-20</p>
-                                        </div>
-                                        <div class="product__closes-in">
-                                            <p class="product__closes-in-time">21j 20h 08m 07s</p>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="product__bid">
-                                            <p>Départ: 25$</p>
-                                            <p>Actuel: 30$</p>
-                                        </div>
-                                        <div class="product__bid-number">
-                                            <p>Mise: 13</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </article>
-                </div>
-
-                <!------------- pagination  ------------>
-                <div class="pagination py-small">
-                    <span class="pagination__item pagination__button inactive"><img src="./assets/img/arrow_left_inactive.svg" alt="inactive left arrow"></span>
-                    <span class="pagination__item pagination__page inactive">1</span>
-                    <span class="pagination__item pagination__page active">
-                        <a href="#">2</a>
-                    </span>
-                    <span class="pagination__item pagination__page active">
-                        <a href="#">3</a>
-                    </span>
-                    <span class="pagination__item pagination__page active">
-                        <a href="#">4</a>
-                    </span>
-                    <span class="pagination__item pagination__page active">
-                        <a href="#">5</a>
-                    </span>
-                    <span class="pagination__item pagination__page active">
-                        <a href="#">6</a>
-                    </span>
-                    <span class="pagination__item pagination__page active">
-                        <a href="#">7</a>
-                    </span>
-                    <span class="pagination__item pagination__page active">
-                        <a href="#">8</a>
-                    </span>
-                    <span class="pagination__item pagination__page active">
-                        <a href="#">9</a>
-                    </span>
-                    <span class="pagination__item pagination__button active">
-                        <a href="#">
-                            <img src="./assets/img/arrow_right_active.svg" alt="active right arrow">
-                        </a>
-                    </span>
+                        </div>
+                    </div>
+                    <div class="detail__info__shipment py-xsmall">
+                        <p class="detail__info__shipment--title">Envoi</p>
+                        <p class="detail__info__shipment--subtitle">Frais d'expédition</p>
+                        <p>Envoi vers Canada : 9 $</p>
+                        <a href="#" class="btn--link">En voir plus<i class="fa-solid fa-arrow-right-long btn--link-icon"></i></a>
+                    </div>
+                    <div class="detail__info__others">
+                        carousel
+                        <div class="owl-carousel">
+                            <div> Your Content </div>
+                            <div> Your Content </div>
+                            <div> Your Content </div>
+                            <div> Your Content </div>
+                            <div> Your Content </div>
+                            <div> Your Content </div>
+                            <div> Your Content </div>
+                        </div>
+                    </div>
+                    <a href="" class="btn--primary">Retourner aux résultats de la recherche</a>
+                    <a href="" class="btn--primary">Haut de la page</a>
+                    <!-- 아마도 이건 화살표로 바꾸는게 좋지 않을까? -->
                 </div>
             </div>
         </main>
+
     </div>
     <!-------------footer  ------------------->
     <footer class="footer py-small">
@@ -636,6 +217,12 @@
             </div>
         </div>
     </div>
+
+    <!-- owl carousel -->
+    <script src="jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    
+    <!-- footer year -->
     <script>
         document.getElementById("copyright-year").innerHTML = new Date().getFullYear();
     </script>
