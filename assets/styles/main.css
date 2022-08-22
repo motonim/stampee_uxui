@@ -36,6 +36,7 @@
 @import "./4-elements/dropdown.css";
 @import "./4-elements/product.css";
 @import "./4-elements/pagination.css";
+@import "./4-elements/nav.css";
 
 
 /*-------------------------------------------------------------------*\
@@ -57,7 +58,11 @@
 @import "./6-components/flex.css";
 @import "./6-components/footer.css";
 @import "./6-components/detail.css";
+@import "./6-components/carousel.css";
 
 /*-------------------------------------------------------------------*\
   UTILITIES - Utilitaires et !important (peu)
 \*-------------------------------------------------------------------*/
+
+@import "./7-utilities/owl.carousel.min.css";
+@import "./7-utilities/owl.theme.default.min.css";

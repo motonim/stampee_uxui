@@ -106,7 +106,8 @@
 }
 
 .detail__info__desc-block--left {
-    color: var(--color-primary);
+    /* color: var(--color-primary); */
+    color: var(--color-secondary);
     margin-right: 5em;
 }
 
@@ -120,9 +121,32 @@
 
 /* ---------- shipment ------------- */
 .detail__info__shipment {
-    border-top: 1px solid rgba(153, 153, 153, 0.3);
-    border-bottom: 1px solid rgba(153, 153, 153, 0.3);
+    /* border-top: 1px solid rgba(153, 153, 153, 0.3); */
+    /* border-bottom: 1px solid rgba(153, 153, 153, 0.3); */
     line-height: 2;
+    position: relative;
+}
+
+.detail__info__shipment::before {
+    display: block;
+    height: 1px;
+    background-color: rgba(153, 153, 153, 0.3);
+    position: relative;
+    top: -40px;
+    margin: 0 auto;
+    width: 143%;
+    content: ""
+}
+
+.detail__info__shipment::after {
+    display: block;
+    height: 1px;
+    background-color: rgba(153, 153, 153, 0.3);
+    position: relative;
+    bottom: -50px;
+    margin: 0 auto;
+    width: 143%;
+    content: ""
 }
 
 .detail__info__shipment .detail__info__shipment--subtitle {
@@ -133,8 +157,64 @@
     font-weight: 300;
 }
 
-.detail__info__shipment--title {
+.detail__info__shipment--title, .detail__others--title {
     font-family: var(--font-secondary);
     font-size: 1.7rem;
 }
 
+/*------------ ce que les autres adorent ------------*/
+
+.detail__others {
+    margin-top: -10px;
+}
+.detail__others .product {
+    background-color: white;
+    cursor: pointer;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0px 5px 7px 1px rgba(153,153,153,0.175);
+
+    transition: all .3s ease-in-out;
+}
+
+.detail__others .product:hover {
+    scale: 1.025;
+    box-shadow: 0px 5px 7px 1px rgba(153,153,153,0.3);
+}
+
+.detail__others .product__image {
+    position: relative;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background-color: var(--color-ivory);
+}
+
+.detail__others .product__text {
+    min-height: 240px;
+    padding: calc(var(--space-base)*1.5);
+}
+
+.detail__others .product__info__subtitle, .product__info__bid{
+    font-weight: 400;
+    color: var(--color-primary);
+    text-transform: uppercase;
+    line-height: 2;
+    font-size: .9rem;
+    letter-spacing: 1px;
+}
+
+.detail__others .product__info__bid {
+    margin-top: 10px;
+}
+
+.detail__others .product__info__number {
+    font-size: 1.1rem;
+    font-weight: 600;
+    /* line-height: 2.5; */
+}

@@ -113,19 +113,3 @@
 .header__nav-myaccount:hover {
     background-color: var(--color-primary);
 }
-
-
-/* 
-.header__menu {
-    display: flex;
-    justify-content: space-between;
-    padding: 3vw 0;
-}
-
-.header__hero {
-    align-items: center;
-    display: flex;
-    flex-grow: 1;
-    font-size: 3.5vw;
-    justify-content: center;
-} */

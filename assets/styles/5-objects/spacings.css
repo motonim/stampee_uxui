@@ -44,3 +44,25 @@
 .pb-xlarge {
     padding-bottom: var(--space-xlarge);
 }
+
+/* padding top */
+
+.pt-xsmall {
+    padding-top: var(--space-xsmall);
+}
+
+.pt-small {
+    padding-top: var(--space-small);
+}
+
+.pt-medium {
+    padding-top: var(--space-medium);
+}
+
+.pt-large {
+    padding-top: var(--space-large);
+}
+
+.pt-xlarge {
+    padding-top: var(--space-xlarge);
+}
