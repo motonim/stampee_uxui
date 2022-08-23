@@ -196,7 +196,7 @@
 }
 
 .detail__others .product__text {
-    min-height: 240px;
+    height: 270px;
     padding: calc(var(--space-base)*1.5);
 }
 
