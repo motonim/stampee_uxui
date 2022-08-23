@@ -5,3 +5,7 @@
 .text__bold {
       font-weight: 600;
 }
+
+.text__center {
+  text-align: center;
+}

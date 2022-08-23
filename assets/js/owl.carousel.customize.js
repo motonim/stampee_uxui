@@ -7,8 +7,8 @@ $('.owl-carousel').owlCarousel({
     center: true,
     nav:true,
     navText: [
-        "<span class='owl-btn-left'><i class='fa-solid fa-arrow-left'></i></span>",
-        "<span class='owl-btn-right'><i class='fa-solid fa-arrow-right'></i></span>"
+        "<span class='btn--left'><i class='fa-solid fa-arrow-left'></i></span>",
+        "<span class='btn--right'><i class='fa-solid fa-arrow-right'></i></span>"
     ],
     autoHeight:true,
     responsive:{
