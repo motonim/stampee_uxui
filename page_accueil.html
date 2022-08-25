@@ -5,11 +5,11 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Stampee | Détails du produit</title>
+	<title>Stampee | Accueil</title>
 	<meta name="description" content="Stampee | Catalogue de produits">
 
     <!-- google font -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500&family=Vollkorn:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;700&family=Vollkorn:wght@600;700&display=swap" rel="stylesheet">
 
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -56,10 +56,10 @@
 
     <!------------- hero ---------------------->
     <div class="wrapper">
-        <main class="main pt-small">
+        <main class="hero py-small flex">
             <div class="hero__text-wrapper">
-                <h1>Le meilleur endroit pour découvrir et acquérir des timbres</h1>
-                <p>On vous offre une plateforme qui permet de parcourir les enchères en fonction de vos intérêts et de trouver rapidement celles qui vous intéressent.</p>
+                <h1 class="hero__title">Le meilleur endroit pour découvrir et acquérir des timbres</h1>
+                <p class="hero__text">On vous offre une plateforme qui permet de parcourir les enchères en fonction de vos intérêts et de trouver rapidement celles qui vous intéressent.</p>
             </div>
             <div class="hero__img-wrapper">
                 <img src="./assets/img/accueil_hero.jpg" alt="voir les timbres attentivement">
@@ -68,7 +68,7 @@
     </div>
 
     <!------------- en vedette ---------------------->
-    <div class="py-small">
+    <div class="featured py-small">
         <div class="wrapper flex">
             <p class="title--primary pb-xsmall">En vedette</p>
             <a href="#" class="btn--link">Voir plus <i class="fa-solid fa-arrow-right-long btn--link-icon"></i></a>
@@ -77,7 +77,7 @@
             <article class="product">
                 <a href="#" class="product__link">
                     <div class="product__image">
-                        <img src="./assets/img/stamp1.jpeg" alt="stamp image" class="product__image-img">
+                        <img src="./assets/img/stamp1.jpg" alt="stamp image" class="product__image-img">
                     </div>
                     <div class="product__text">
                         <div class="product__title">
@@ -95,7 +95,7 @@
             <article class="product">
                 <a href="#" class="product__link">
                     <div class="product__image">
-                        <img src="./assets/img/stamp2.jpeg" alt="stamp image" class="product__image-img">
+                        <img src="./assets/img/stamp2.jpg" alt="stamp image" class="product__image-img">
                     </div>
                     <div class="product__text">
                         <div class="product__title">
@@ -149,7 +149,7 @@
             <article class="product">
                 <a href="#" class="product__link">
                     <div class="product__image">
-                        <img src="./assets/img/stamp5.jpeg" alt="stamp image" class="product__image-img">
+                        <img src="./assets/img/stamp5.jpg" alt="stamp image" class="product__image-img">
                     </div>
                     <div class="product__text">
                         <div class="product__title">
@@ -167,7 +167,7 @@
             <article class="product">
                 <a href="#" class="product__link">
                     <div class="product__image">
-                        <img src="./assets/img/stamp6.jpeg" alt="stamp image" class="product__image-img">
+                        <img src="./assets/img/stamp6.jpg" alt="stamp image" class="product__image-img">
                     </div>
                     <div class="product__text">
                         <div class="product__title">
@@ -186,68 +186,97 @@
     </div>
 
     <!------------- information ---------------------->
-    <div class="information">
+    <div class="information bg--light py-small">
         <div class="wrapper flex">
-            <div class="information__text-wrapper">
-                <p class="title--primary">Placez des offres</p>
-                <p>Vous pouvez placer des offres, à répétition si vous le souhaitez, sur une ou des enchères. Vous pouvez aussi consulter les enchères archivées.</p>
-                <a href="#" class="btn--link">Trouvez des timbres <i class="fa-solid fa-arrow-right-long btn--link-icon"></i></a>
+            <div class="information__text-wrapper flex--column">
+                <div class="information__text-wrapper__text">
+                    <p class="title--primary">Placez des offres</p>
+                    <p class="information__desc">Vous pouvez placer des offres, à répétition si vous le souhaitez, sur une ou des enchères. Vous pouvez aussi consulter les enchères archivées.</p>
+                </div>
+                <div class="information__text-wrapper__btn">
+                    <a href="#" class="btn--link">Trouvez des timbres <i class="fa-solid fa-arrow-right-long btn--link-icon"></i></a>
+                </div>
             </div>
-            <div class="information__text-wrapper">
-                <p class="title--primary">Qui est Stampee?</p>
-                <p>Lord Reginald Stampee, duc de Worcessteshear et philatéliste depuis sa tendre enfance au milieu des années cinquante, a créé cette plateforme d’enchères de timbres qui font accourir les plus grands philatélistes du monde.</p>
-                <a href="#" class="btn--link">À propos <i class="fa-solid fa-arrow-right-long btn--link-icon"></i></a>
+            <div class="information__text-wrapper flex--column">
+                <div class="information__text-wrapper__text">
+                    <p class="title--primary">Qui est Stampee?</p>
+                    <p class="information__desc">Lord Reginald Stampee, duc de Worcessteshear et philatéliste depuis sa tendre enfance au milieu des années cinquante, a créé cette plateforme d’enchères de timbres qui font accourir les plus grands philatélistes du monde.</p>
+                </div>
+                <div class="information__text-wrapper__btn">
+                    <a href="#" class="btn--link">À propos <i class="fa-solid fa-arrow-right-long btn--link-icon"></i></a>
+                </div>
             </div>
         </div>
     </div>
 
     <!------------- actualités ---------------------->
-    <div class="news wrapper">
-        <div class="news__top flex">
-            <p class="title--primary">Actualités</p>
-            <a href="#" class="btn--link">Voir plus <i class="fa-solid fa-arrow-right-long btn--link-icon"></i></a>
-        </div>
-        <div class="news__content">
-            <div class="news__item">
-                <img src="./assets/img/actualite_enchere.jpg" alt="un vieil appartement">
-                <p class="news__item__category">Enchères</p>
-                <p class="news__item__title">Gironde : des appartements et des maisons sont mis aux enchères à partir de 24 000 €</p>
-                <p class="news__item__date">16 Août 2022</p>
-                <p class="news__item__text">En Gironde, il sera possible de faire des bonnes affaires lors de ventes aux enchères organisées par les tribunaux judiciaires de Bordeaux et Libourne en septembre. À cette occasion, plusieurs maisons ou appartements, saisis par la justice, seront mis en vente à des prix très attractifs.</p>
-                <a href="#" class="btn--link">En lire plus <i class="fa-solid fa-arrow-right-long btn--link-icon"></i></a>
+    <div class="news py-small">
+        <div class="wrapper">
+            <div class="news__top flex">
+                <p class="title--primary">Actualités</p>
+                <a href="#" class="btn--link">Voir plus <i class="fa-solid fa-arrow-right-long btn--link-icon"></i></a>
             </div>
-            <div class="news__item">
-                <img src="./assets/img/actualite_timbre_ukraine.jpg" alt="un timbre ukrainien avec un tracteur tirant un char russe détruit">
-                <p class="news__item__category">Timbres</p>
-                <p class="news__item__title">La poste ukrainienne publie un nouveau timbre avec un tracteur tirant un char russe détruit</p>
-                <p class="news__item__date">28 Juillet 2022</p>
-                <p class="news__item__text">Un nouveau timbre est mis en vente ce jeudi 28 juillet en Ukraine. Sa particularité : il représente un tracteur ukrainien remorquant un char russe. Un des symboles forts de la résistance ukrainienne à l’agression russe dans cette guerre commencée le 24 février 2022.</p>
-                <a href="#" class="btn--link">En lire plus <i class="fa-solid fa-arrow-right-long btn--link-icon"></i></a>
-            </div>
-            <div class="news__item">
-                <img src="./assets/img/actualite_timbre1.jpg" alt="un timbre rouge">
-                <p class="news__item__category">Timbres</p>
-                <p class="news__item__title">La Poste annonce la fin du timbre rouge et ralentit le timbre vert</p>
-                <p class="news__item__date">21 Juillet 2022</p>
-                <p class="news__item__text">C’est la fin d’une longue histoire et le signe d’un vaste changement au sein de La Poste. Ce jeudi 21 juillet 2022, l’entreprise publique a annoncé la suppression du timbre rouge à partir du 1er janvier 2023. Pour rappel, le timbre lettre prioritaire est destiné à l’envoi de courrier urgent, qui peut être reçu à J+1 (envoyé avant 20h et reçu le lendemain) au lieu de J+3 pour la lettre verte.</p>
-                <a href="#" class="btn--link">En lire plus <i class="fa-solid fa-arrow-right-long btn--link-icon"></i></a>
+            <div class="news__content grid grid--3">
+                <div class="news__item flex--column">
+                    <div class="news__item__text-img">
+                        <img src="./assets/img/actualite_enchere.jpg" alt="un vieil appartement">
+                        <p class="news__item__category">Enchères</p>
+                        <p class="news__item__title">Gironde : des appartements et des maisons sont mis aux enchères à partir de 24 000 €</p>
+                        <p class="news__item__date">16 Août 2022</p>
+                        <p class="news__item__text">En Gironde, il sera possible de faire des bonnes affaires lors de ventes aux enchères organisées par les tribunaux judiciaires de Bordeaux et Libourne en septembre. À cette occasion, plusieurs maisons ou appartements, saisis par la justice, seront mis en vente à des prix très attractifs.</p>
+                    </div>
+                    <div class="news__item__btn">
+                        <a href="#" class="btn--link--gray">En lire plus <i class="fa-solid fa-arrow-right-long btn--link-icon"></i></a>
+                    </div>
+                </div>
+                <div class="news__item flex--column">
+                    <div class="news__item__text-img">
+                        <img src="./assets/img/actualite_timbre_ukraine.jpg" alt="un timbre ukrainien avec un tracteur tirant un char russe détruit">
+                        <p class="news__item__category">Timbres</p>
+                        <p class="news__item__title">La poste ukrainienne publie un nouveau timbre avec un tracteur tirant un char russe détruit</p>
+                        <p class="news__item__date">28 Juillet 2022</p>
+                        <p class="news__item__text">Un nouveau timbre est mis en vente ce jeudi 28 juillet en Ukraine. Sa particularité : il représente un tracteur ukrainien remorquant un char russe. Un des symboles forts de la résistance ukrainienne à l’agression russe dans cette guerre commencée le 24 février 2022.</p>
+                    </div>
+                    <div class="news__item__btn">
+                        <a href="#" class="btn--link--gray">En lire plus <i class="fa-solid fa-arrow-right-long btn--link-icon"></i></a>
+                    </div>
+                </div>
+                <div class="news__item flex--column">
+                    <div class="news__item__text-img">
+                        <img src="./assets/img/actualite_timbre1.jpg" alt="un timbre rouge">
+                        <p class="news__item__category">Timbres</p>
+                        <p class="news__item__title">La Poste annonce la fin du timbre rouge et ralentit le timbre vert</p>
+                        <p class="news__item__date">21 Juillet 2022</p>
+                        <p class="news__item__text">C’est la fin d’une longue histoire et le signe d’un vaste changement au sein de La Poste. Ce jeudi 21 juillet 2022, l’entreprise publique a annoncé la suppression du timbre rouge à partir du 1er janvier 2023.</p>
+                    </div>
+                    <div class="news__item__btn">
+                        <a href="#" class="btn--link--gray">En lire plus <i class="fa-solid fa-arrow-right-long btn--link-icon"></i></a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="infolettre wrapper">
-        <div class="infolettre__img-wrapper">
-            <img src="./assets/img/infolettre_img.jpg" alt="quelqu'un regarde les timbres">
-        </div>
-        <div class="infolettre__text-wrapper">
-            <p class="title--primary">Abonnez-vous à notre infolettre</p>
-            <p class="infolettre__text">Soyez informé de nos nouveautés et découvrez nos actualités</p>
-            <a href="#" class="btn--secondary">Je m'abonne</a>
+    <!------------- infolettre ---------------------->
+    <div class="newsletter pt-xsmall">
+        <div class="wrapper">
+            <div class="bg--light flex">
+                <div class="newsletter__img-wrapper">
+                    <img src="./assets/img/infolettre_img.jpg" alt="quelqu'un regarde les timbres">
+                </div>
+                <div class="newsletter__text-wrapper">
+                    <p class="title--primary">Abonnez-vous à notre infolettre</p>
+                    <p class="newsletter__text">Soyez informé de nos nouveautés et découvrez nos actualités</p>
+                    <a href="#" class="btn--secondary">Je m'abonne</a>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div class="wrapper text__center">
-        <a href="#" aria-label="Retour en haut" data-js-scroll-to-top>Haut de la page <span class="btn--up"><i class="fa-solid fa-arrow-up"></i></span></a>
+    <div class="py-small">
+        <div class="wrapper text__center">
+            <a href="#" aria-label="Retour en haut" data-js-scroll-to-top>Haut de la page <span class="btn--up"><i class="fa-solid fa-arrow-up"></i></span></a>
+        </div>
     </div>
 
     <!-------------footer  ------------------->

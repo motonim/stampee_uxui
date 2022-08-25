@@ -3,8 +3,8 @@
 \*------------------------------------*/
 
 button {
-      border: none;  
-      background: none;
+  border: none;  
+  background: none;
 }
 
 .btn--primary {
@@ -39,12 +39,17 @@ button {
   color: var(--color-primary);
 }
 
+.btn--link--gray {
+  color: #777777;
+}
+
 .btn--link-icon {
-  margin-left: 20px;
+  margin-left: 10px;
   transition: transform .3s ease-in-out;
 }
 
 .btn--link:hover .btn--link-icon,
-.btn--link-icon:hover {
-  transform: translateX(8px)
+.btn--link-icon:hover,
+.btn--link--gray:hover .btn--link-icon {
+  transform: translateX(5px)
 }

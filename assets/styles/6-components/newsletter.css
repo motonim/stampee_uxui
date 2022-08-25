@@ -1,0 +1,30 @@
+/*------------------------------------*\
+  newsletter / components
+\*------------------------------------*/
+
+.newsletter__img-wrapper {
+    width: 60%;
+    display: flex;
+}
+
+.newsletter__text-wrapper {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 calc(var(--space-base) * 6.5);
+    text-align: center;
+}
+
+.newsletter__text-wrapper .newsletter__text {
+    line-height: 1.75;
+    padding: 5px 0 50px 0;
+    font-weight: 300;
+}
+
+.newsletter__text-wrapper a {
+    width: fit-content;
+    /* display: block; */
+    /* text-align: center; */
+    margin: 0 auto;
+}

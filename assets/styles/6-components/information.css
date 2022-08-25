@@ -1,0 +1,20 @@
+/*------------------------------------*\
+  information / components
+\*------------------------------------*/
+
+.information__text-wrapper {
+    width: 48.5%;
+    background-color: var(--color-white);
+    padding: 50px;
+    height: 400px;
+}
+
+.information__text-wrapper__text .title--primary {
+    text-align: center;
+}
+
+.information__desc {
+    padding-top: 20px;
+    line-height: 2;
+    font-weight: 300;
+}

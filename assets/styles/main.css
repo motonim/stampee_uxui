@@ -45,6 +45,7 @@
 
 @import "./5-objects/wrapper.css";
 @import "./5-objects/spacings.css";
+@import "./5-objects/bg.css";
 
 /*-------------------------------------------------------------------*\
   COMPONENTS
@@ -59,6 +60,11 @@
 @import "./6-components/footer.css";
 @import "./6-components/detail.css";
 @import "./6-components/carousel.css";
+@import "./6-components/hero.css";
+@import "./6-components/featured.css";
+@import "./6-components/information.css";
+@import "./6-components/news.css";
+@import "./6-components/newsletter.css";
 
 /*-------------------------------------------------------------------*\
   UTILITIES - Utilitaires et !important (peu)

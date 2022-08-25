@@ -16,6 +16,9 @@
     width: 20%;
 }
 
+.owl-dots {
+  display: none;
+}
 
 .owl-nav button {
     border: none !important;
