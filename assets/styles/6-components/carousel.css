@@ -35,20 +35,21 @@
 }
 
 .owl-prev {
-  left: 2%;
+  left: 6%;
 }
 
 .owl-next {
-  right: 2%;
+  right: 6%;
   justify-content: flex-end;
 }
 
 .btn--left, .btn--right {
   font-size: 20px;
-  background-color: var(--color-ivory);
+  background-color: var(--color-secondary);
+  color: var(--color-ivory);
   padding: 10px;
   border-radius: 50%;
-  border: 0.5px solid rgba(153, 153, 153, 0.3);
+  border: 0.5px solid var(--color-secondary);
   transition: background-color .3s ease-in-out,
               color .3s ease-in-out;
 }
@@ -70,5 +71,11 @@
 
 
 .owl-carousel .owl-stage-outer {
-  height: 530px !important;
+  height: 625px !important;
+}
+
+@media only screen and (min-width: 1400px) {
+  .owl-carousel .owl-stage-outer {
+    height: 700px !important;
+  }
 }

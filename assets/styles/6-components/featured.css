@@ -32,11 +32,17 @@
 }
 
 .featured .product__text {
-    height: 270px;
+    height: 360px;
     padding: calc(var(--space-base)*1.5);
 }
 
-.featured .product__info__subtitle, .product__info__bid{
+@media only screen and (min-width: 1400px) {
+    .featured .product__text {
+        height: 400px;
+    }
+}
+
+/* .featured .product__info__subtitle, .product__info__bid{
     font-weight: 400;
     color: var(--color-primary);
     text-transform: uppercase;
@@ -52,5 +58,4 @@
 .featured .product__info__number {
     font-size: 1.1rem;
     font-weight: 600;
-    /* line-height: 2.5; */
-}
+} */

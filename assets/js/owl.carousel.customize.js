@@ -6,6 +6,7 @@ $('.owl-carousel').owlCarousel({
     margin:30,
     center: true,
     nav:true,
+    dots: false,
     navText: [
         "<span class='btn--left'><i class='fa-solid fa-arrow-left'></i></span>",
         "<span class='btn--right'><i class='fa-solid fa-arrow-right'></i></span>"

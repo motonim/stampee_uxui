@@ -35,6 +35,22 @@ button {
   background-color: var(--color-primary);
 }
 
+.btn--border {
+  padding: 10px 20px;
+  border: 1px solid var(--color-primary);
+  width: fit-content;
+  border-radius: 15px;
+  color: var(--color-primary);
+  transition: background-color .3s ease-in,
+              color .3s ease-in
+
+}
+
+.btn--border:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
 .btn--link {
   color: var(--color-primary);
 }
@@ -53,3 +69,5 @@ button {
 .btn--link--gray:hover .btn--link-icon {
   transform: translateX(5px)
 }
+
+
