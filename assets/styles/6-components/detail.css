@@ -106,7 +106,6 @@
 }
 
 .detail__info__desc-block--left {
-    /* color: var(--color-primary); */
     color: var(--color-secondary);
     margin-right: 5em;
 }
@@ -121,8 +120,6 @@
 
 /* ---------- shipment ------------- */
 .detail__info__shipment {
-    /* border-top: 1px solid rgba(153, 153, 153, 0.3); */
-    /* border-bottom: 1px solid rgba(153, 153, 153, 0.3); */
     line-height: 2;
     position: relative;
 }
@@ -178,7 +175,6 @@
     border-radius: 5px;
     overflow: hidden;
     box-shadow: 0px 5px 7px 1px rgba(153,153,153,0.175);
-
     transition: all .3s ease-in-out;
 }
 
@@ -217,5 +213,4 @@
 .detail__others .product__info__number {
     font-size: 1.1rem;
     font-weight: 600;
-    /* line-height: 2.5; */
 }

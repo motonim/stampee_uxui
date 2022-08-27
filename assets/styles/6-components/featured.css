@@ -41,21 +41,3 @@
         height: 400px;
     }
 }
-
-/* .featured .product__info__subtitle, .product__info__bid{
-    font-weight: 400;
-    color: var(--color-primary);
-    text-transform: uppercase;
-    line-height: 2;
-    font-size: .9rem;
-    letter-spacing: 1px;
-}
-
-.featured .product__info__bid {
-    margin-top: 10px;
-}
-
-.featured .product__info__number {
-    font-size: 1.1rem;
-    font-weight: 600;
-} */

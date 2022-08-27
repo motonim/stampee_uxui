@@ -24,7 +24,5 @@
 
 .newsletter__text-wrapper a {
     width: fit-content;
-    /* display: block; */
-    /* text-align: center; */
     margin: 0 auto;
 }

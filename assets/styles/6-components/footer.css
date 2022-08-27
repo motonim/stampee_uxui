@@ -68,9 +68,6 @@ a.footer__link-wrapper__link-membre:hover::before,
 a.footer__link-wrapper__link:hover::before {
     left: 0;
     right: 0;
-    /* color: #FF4365; */
-    /* color: #D64550; */
-    /* color: #E3170A; */
 }
 
 .footer__link-wrapper__link {
@@ -106,10 +103,6 @@ a.footer__link-wrapper__link:hover::before {
 .footer__link-wrapper__link + .footer__link-wrapper__link {
     margin-top: 1em;
 }
-
-/* .footer__link-wrapper__link:hover {
-    color: #E3170A;
-} */
 
 .footer__link-wrapper__container {
     display: flex;
